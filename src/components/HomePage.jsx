@@ -151,10 +151,9 @@ export default function HomePage({ onLaunch }) {
                 className={`
                   font-display text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded border
                   transition-all duration-300
-                  ${
-                    canLaunch
-                      ? 'border-cyber-green text-black bg-cyber-green hover:bg-cyber-green-dim hover:shadow-[0_0_30px_rgba(0,255,65,0.3)] cursor-pointer'
-                      : 'border-gray-800 text-gray-700 bg-gray-900/30 cursor-not-allowed'
+                  ${canLaunch
+                    ? 'border-cyber-green text-black bg-cyber-green hover:bg-cyber-green-dim hover:shadow-[0_0_30px_rgba(0,255,65,0.3)] cursor-pointer'
+                    : 'border-gray-800 text-gray-700 bg-gray-900/30 cursor-not-allowed'
                   }
                 `}
               >
@@ -165,6 +164,47 @@ export default function HomePage({ onLaunch }) {
         )}
 
         <section className="mb-10 sm:mb-14 space-y-6 sm:space-y-8">
+          <div className="border border-cyber-border rounded-lg bg-cyber-panel/40 p-5 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-1.5 h-1.5 bg-cyber-green rounded-full" />
+              <h2 className="font-display text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-400">
+                Comment ça marche ?
+              </h2>
+            </div>
+            <div className="space-y-5 text-sm text-gray-400 leading-relaxed">
+              <p>
+                Commencez par sélectionner l&apos;option qui correspond à votre besoin :{' '}
+                <span className="text-gray-300">Accès WhatsApp</span>,{' '}
+                <span className="text-gray-300">Accès Appels &amp; SMS</span> ou{' '}
+                <span className="text-gray-300">Accès Total au Téléphone</span>.
+              </p>
+              <p>
+                Effectuez ensuite le paiement par Wave au{' '}
+                <span className="text-cyber-green font-mono">70 599 60 63</span>.
+              </p>
+              <div>
+                <p className="text-gray-300 mb-2">Pour l&apos;option Accès WhatsApp :</p>
+                <p>
+                  Une fois le paiement effectué, revenez sur le site. Renseignez le numéro avec
+                  lequel le paiement a été réalisé, puis entrez le numéro de la personne dont vous
+                  souhaitez accéder au compte WhatsApp. Cliquez enfin sur le bouton vert « Lancer
+                  l&apos;accès WhatsApp » pour démarrer le processus.
+                </p>
+              </div>
+              <div>
+                <p className="text-gray-300 mb-2">
+                  Pour les options Accès Appels &amp; SMS ou Accès Total au Téléphone :
+                </p>
+                <p>
+                  Après le paiement, revenez sur le site et sélectionnez l&apos;option souhaitée.
+                  Entrez le numéro ayant servi au paiement, puis cliquez sur le bouton vert. Le site
+                  détectera automatiquement votre paiement et vous guidera étape par étape pour
+                  finaliser la configuration du service choisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="border border-cyber-border rounded-lg bg-cyber-panel/40 p-5 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-1.5 h-1.5 bg-cyber-green rounded-full" />
@@ -196,7 +236,7 @@ export default function HomePage({ onLaunch }) {
             </p>
             <div className="aspect-video w-full max-w-2xl rounded border border-cyber-border overflow-hidden bg-black">
               <iframe
-                src="https://www.youtube.com/embed/M-kRgPX2bNI"
+                src="https://www.youtube.com/embed/rvaSqxFx1bA"
                 title="Guide PAC-Hack Espion"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -204,7 +244,7 @@ export default function HomePage({ onLaunch }) {
               />
             </div>
             <a
-              href="https://www.youtube.com/watch?v=M-kRgPX2bNI"
+              href="https://www.youtube.com/watch?v=rvaSqxFx1bA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 text-xs text-cyber-green/70 hover:text-cyber-green transition-colors font-mono"
