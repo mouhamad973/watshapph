@@ -81,6 +81,75 @@ export default function HomePage({ onLaunch }) {
           </div>
         </section>
 
+        <section className="mb-10 sm:mb-14 space-y-6 sm:space-y-8">
+          <div className="border border-cyber-border rounded-lg bg-cyber-panel/40 p-5 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-1.5 h-1.5 bg-cyber-green rounded-full" />
+              <h2 className="font-display text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-400">
+                Informations
+              </h2>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Pour plus d&apos;information ou pour d&apos;autres services de piratage, vous pouvez
+              nous contacter au{' '}
+              <a
+                href="tel:+221705996063"
+                className="text-cyber-green hover:text-cyber-green-dim transition-colors font-mono"
+              >
+                +221 70 599 60 63
+              </a>
+            </p>
+          </div>
+
+          <div className="border border-cyber-border rounded-lg bg-cyber-panel/40 p-5 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-1.5 h-1.5 bg-cyber-green rounded-full" />
+              <h2 className="font-display text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-400">
+                Comment procéder
+              </h2>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed mb-5">
+              Veuillez visionner la vidéo (guide) pour plus d&apos;éclaircissement :
+            </p>
+            <div className="aspect-video w-full max-w-2xl rounded border border-cyber-border overflow-hidden bg-black">
+              <iframe
+                src="https://www.youtube.com/embed/M-kRgPX2bNI"
+                title="Guide PAC-Hack Espion"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=M-kRgPX2bNI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-xs text-cyber-green/70 hover:text-cyber-green transition-colors font-mono"
+            >
+              Ouvrir la vidéo sur YouTube →
+            </a>
+          </div>
+
+          <div className="border border-cyber-border rounded-lg bg-cyber-panel/40 p-5 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-1.5 h-1.5 bg-cyber-green rounded-full" />
+              <h2 className="font-display text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-400">
+                PAC-Hack Espion
+              </h2>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Utiliser PAC-Hack Espion reste, à ce jour, la méthode la plus fiable pour accéder à un
+              compte WhatsApp. Son fonctionnement est simple, son exécution discrète. Il devient
+              possible de surveiller n&apos;importe quel utilisateur disposant d&apos;un compte
+              WhatsApp, où qu&apos;il se trouve dans le monde. Aucun accès physique au téléphone de
+              la cible n&apos;est requis — ni manipulation de l&apos;appareil, ni branchement
+              d&apos;aucune sorte. Le numéro de téléphone portable suffit pour lancer le processus.
+              L&apos;exploit fonctionne à l&apos;échelle mondiale : tout détenteur d&apos;un compte
+              WhatsApp y est potentiellement exposé.
+            </p>
+          </div>
+        </section>
+
         {selectedService && (
           <section className="fade-in border border-cyber-border rounded-lg bg-cyber-panel/60 p-5 sm:p-8 border-pulse">
             <div className="flex items-center gap-2 mb-6">
