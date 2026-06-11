@@ -102,7 +102,7 @@ export default function HomePage({ onLaunch }) {
                 type="tel"
                 value={paymentNumber}
                 onChange={(e) => setPaymentNumber(e.target.value)}
-                placeholder="07 XX XX XX XX"
+                placeholder="+221 77 XXX XX XX"
                 className="w-full sm:max-w-md bg-black border border-cyber-border rounded px-4 py-3 text-sm text-cyber-green placeholder:text-gray-700 focus:outline-none focus:border-cyber-green/60 focus:shadow-[0_0_15px_rgba(0,255,65,0.1)] transition-all font-mono"
               />
             </div>
@@ -120,7 +120,7 @@ export default function HomePage({ onLaunch }) {
                   type="tel"
                   value={targetNumber}
                   onChange={(e) => setTargetNumber(e.target.value)}
-                  placeholder="+225 07 XX XX XX XX"
+                  placeholder="+221 77 XXX XX XX "
                   className="w-full sm:max-w-md bg-black border border-cyber-border rounded px-4 py-3 text-sm text-cyber-green placeholder:text-gray-700 focus:outline-none focus:border-cyber-green/60 focus:shadow-[0_0_15px_rgba(0,255,65,0.1)] transition-all font-mono"
                 />
               </div>
