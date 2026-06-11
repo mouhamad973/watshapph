@@ -10,7 +10,7 @@ export const services = [
   {
     id: 'calls',
     title: 'Accès Appels & SMS',
-    description: 'Historique complet des appels et messages',
+    description: 'Accès complet des appels et messages',
     price: '10 000 FCFA',
     buttonText: "Lancer l'accès Appels & SMS",
     needsPhone: false,
